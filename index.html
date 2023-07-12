@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Login Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form onsubmit="return login()" id="loginForm"> 
+    <fieldset>
+        <legend>ورود به پارتی</legend>
+        <p id="wrong">Invalid User/Password</p>
+        <input type="text" value="نام کاربری" placeholder="نام کاربری خود را وارد کنید" id="Username"  oninput="clearwrong()">
+        <br><br><br>
+        <input type="password"  placeholder="رمز عبور خودرا وارد کنید" id="password"  oninput="clearwrong()">
+        <br><br><br><br>
+        <input type="submit" value="Login" class="button">
+    </fieldset>
+</form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
